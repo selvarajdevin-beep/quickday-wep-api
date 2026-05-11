@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\services\\superadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\services\\superadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|d:\\projects\\watercanmanagement\\shop_claude_backend\\shop.web.api\\shop.web.api\\repositories\\superadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32076049-5F65-8DD9-E8E6-33EA0C6BECDB}|Shop.Web.API\\Shop.Web.API.csproj|solutionrelative:shop.web.api\\repositories\\superadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Shop.Web.API\\appsettings.Production.json",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.Production.json",
+              "RelativeToolTip": "Shop.Web.API\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T15:00:14.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SuperAdminRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Repositories\\SuperAdminRepository.cs",
+              "RelativeDocumentMoniker": "Shop.Web.API\\Repositories\\SuperAdminRepository.cs",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Repositories\\SuperAdminRepository.cs",
+              "RelativeToolTip": "Shop.Web.API\\Repositories\\SuperAdminRepository.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAADwv9EAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:07:05.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SuperAdminService.cs",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Services\\SuperAdminService.cs",
+              "RelativeDocumentMoniker": "Shop.Web.API\\Services\\SuperAdminService.cs",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Services\\SuperAdminService.cs",
+              "RelativeToolTip": "Shop.Web.API\\Services\\SuperAdminService.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAUwM4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:06:48.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuperAdminController.cs",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Controllers\\SuperAdminController.cs",
+              "RelativeDocumentMoniker": "Shop.Web.API\\Controllers\\SuperAdminController.cs",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Controllers\\SuperAdminController.cs",
+              "RelativeToolTip": "Shop.Web.API\\Controllers\\SuperAdminController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAowHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T02:06:07.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Shop.Web.API\\appsettings.Development.json",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.Development.json",
+              "RelativeToolTip": "Shop.Web.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T15:47:18.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Shop.Web.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Shop.Web.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T15:40:27.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Shop.Web.API\\appsettings.json",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\appsettings.json",
+              "RelativeToolTip": "Shop.Web.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-27T01:43:29.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Program.cs",
+              "RelativeDocumentMoniker": "Shop.Web.API\\Program.cs",
+              "ToolTip": "D:\\Projects\\WaterCanManagement\\shop_claude_backend\\Shop.Web.API\\Shop.Web.API\\Program.cs",
+              "RelativeToolTip": "Shop.Web.API\\Program.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAIwKsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T01:43:21.398Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
