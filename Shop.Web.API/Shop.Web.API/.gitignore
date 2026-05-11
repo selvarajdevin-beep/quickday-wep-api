@@ -1,6 +1,8 @@
 .vs/
 bin/
 obj/
+logs/
+*.user
 
 appsettings.Production.json
 appsettings.Development.json
