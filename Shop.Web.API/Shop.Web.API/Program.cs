@@ -128,7 +128,7 @@ try
     // ── CORS ──────────────────────────────────────────────
     var allowedOrigins = builder.Configuration
         .GetSection("AllowedOrigins")
-        .Get<string[]>() ?? ["http://localhost:4200", "https://polite-frangollo-5c001f.netlify.app", "https://fabulous-chaja-c510d8.netlify.app"];
+        .Get<string[]>() ?? ["http://localhost:4200", "https://quickday-angular.vercel.app", "https://fabulous-chaja-c510d8.netlify.app"];
 
     builder.Services.AddCors(o => o.AddPolicy("Angular", p =>
         p.WithOrigins(allowedOrigins)
@@ -138,6 +138,29 @@ try
     // ── Swagger (dev only) ────────────────────────────────
     builder.Services.AddOpenApi();
 
+    //// ─────────────────────────────────────────────────────
+    //var app = builder.Build();
+    //// ─────────────────────────────────────────────────────
+
+    //// ── Middleware pipeline (ORDER MATTERS) ───────────────
+    //app.UseMiddleware<ExceptionHandlingMiddleware>();  // 1st — catch all
+    //app.UseMiddleware<RequestLoggingMiddleware>();     // 2nd — log every request
+
+    ////if (app.Environment.IsDevelopment())
+    ////{
+    ////    app.MapOpenApi();       // serves at /openapi/v1.json
+    ////    app.MapScalarApiReference(); // serves at /scalar/v1
+    ////}
+
+    //app.UseHttpsRedirection();
+    //app.UseCors("Angular");
+    //app.UseAuthentication();  // must be before UseAuthorization
+    //app.UseAuthorization();
+    //app.MapControllers();
+
+    //Log.Information("AquaERP API starting up on {Env}", app.Environment.EnvironmentName);
+    //app.Run();
+
     // ─────────────────────────────────────────────────────
     var app = builder.Build();
     // ─────────────────────────────────────────────────────
@@ -146,19 +169,20 @@ try
     app.UseMiddleware<ExceptionHandlingMiddleware>();  // 1st — catch all
     app.UseMiddleware<RequestLoggingMiddleware>();     // 2nd — log every request
 
-    if (app.Environment.IsDevelopment())
-    {
-        app.MapOpenApi();       // serves at /openapi/v1.json
-        app.MapScalarApiReference(); // serves at /scalar/v1
-    }
+    app.MapOpenApi();              // serves at /openapi/v1.json
+    app.MapScalarApiReference();   // serves at /scalar/v1
+
+    app.MapGet("/", () => "AquaERP API Running");
 
     app.UseHttpsRedirection();
     app.UseCors("Angular");
     app.UseAuthentication();  // must be before UseAuthorization
     app.UseAuthorization();
+
     app.MapControllers();
 
     Log.Information("AquaERP API starting up on {Env}", app.Environment.EnvironmentName);
+
     app.Run();
 }
 catch (Exception ex)
