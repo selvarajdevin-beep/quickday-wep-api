@@ -47,12 +47,57 @@ namespace Shop.Web.API.Repositories
         //    }
         //}
 
-        public async Task<(List<ProductRecord> Items, int TotalCount)> GetAllAsync(
-            int businessAccountId, int requestingUserId,
-            bool? activeOnly, string? category, string? search, bool? lowStockOnly,
-            int page, int pageSize)
+        //public async Task<(List<ProductRecord> Items, int TotalCount)> GetAllAsync(
+        //    int businessAccountId, int requestingUserId,
+        //    bool? activeOnly, string? category, string? search, bool? lowStockOnly,
+        //    int page, int pageSize)
+        //{
+        //    using var db = new SqlConnection(_conn);
+        //    try
+        //    {
+        //        using var multi = await db.QueryMultipleAsync(
+        //            "dbo.usp_Products_GetAll",
+        //            new
+        //            {
+        //                BusinessAccountId = businessAccountId,
+        //                RequestingUserId = requestingUserId,
+        //                ActiveOnly = activeOnly.HasValue ? (object)(activeOnly.Value ? 1 : 0) : DBNull.Value,
+        //                Category = string.IsNullOrWhiteSpace(category) ? (object)DBNull.Value : category,
+        //                Search = string.IsNullOrWhiteSpace(search) ? (object)DBNull.Value : search,
+        //                LowStockOnly = lowStockOnly.HasValue ? (object)(lowStockOnly.Value ? 1 : 0) : DBNull.Value,
+        //                Page = page,
+        //                PageSize = pageSize,
+        //            },
+        //            commandType: CommandType.StoredProcedure);
+
+        //        var totalCount = await multi.ReadSingleAsync<int>();
+        //        var items = (await multi.ReadAsync<ProductRecord>()).AsList();
+        //        return (items, totalCount);
+        //    }
+        //    catch (SqlException ex)
+        //    {
+        //        _logger.LogError(ex, "SQL error in Products.GetAllAsync BusinessAccountId={Id}", businessAccountId);
+        //        throw;
+        //    }
+        //}
+
+        public async Task<(
+            List<ProductRecord> Items,
+            int TotalCount,
+            int TotalStockUnits,
+            int LowStockCount
+        )> GetAllAsync(
+            int businessAccountId,
+            int requestingUserId,
+            bool? activeOnly,
+            string? category,
+            string? search,
+            bool? lowStockOnly,
+            int page,
+            int pageSize)
         {
             using var db = new SqlConnection(_conn);
+
             try
             {
                 using var multi = await db.QueryMultipleAsync(
@@ -61,22 +106,51 @@ namespace Shop.Web.API.Repositories
                     {
                         BusinessAccountId = businessAccountId,
                         RequestingUserId = requestingUserId,
-                        ActiveOnly = activeOnly.HasValue ? (object)(activeOnly.Value ? 1 : 0) : DBNull.Value,
-                        Category = string.IsNullOrWhiteSpace(category) ? (object)DBNull.Value : category,
-                        Search = string.IsNullOrWhiteSpace(search) ? (object)DBNull.Value : search,
-                        LowStockOnly = lowStockOnly.HasValue ? (object)(lowStockOnly.Value ? 1 : 0) : DBNull.Value,
+
+                        ActiveOnly = activeOnly.HasValue
+                            ? (object)(activeOnly.Value ? 1 : 0)
+                            : DBNull.Value,
+
+                        Category = string.IsNullOrWhiteSpace(category)
+                            ? (object)DBNull.Value
+                            : category,
+
+                        Search = string.IsNullOrWhiteSpace(search)
+                            ? (object)DBNull.Value
+                            : search,
+
+                        LowStockOnly = lowStockOnly.HasValue
+                            ? (object)(lowStockOnly.Value ? 1 : 0)
+                            : DBNull.Value,
+
                         Page = page,
                         PageSize = pageSize,
                     },
                     commandType: CommandType.StoredProcedure);
 
+                // Result set 1
                 var totalCount = await multi.ReadSingleAsync<int>();
+
+                // Result set 2
+                var summary = await multi.ReadSingleAsync<ProductInventorySummary>();
+
+                // Result set 3
                 var items = (await multi.ReadAsync<ProductRecord>()).AsList();
-                return (items, totalCount);
+
+                return (
+                    items,
+                    totalCount,
+                    summary.TotalStockUnits,
+                    summary.LowStockCount
+                );
             }
             catch (SqlException ex)
             {
-                _logger.LogError(ex, "SQL error in Products.GetAllAsync BusinessAccountId={Id}", businessAccountId);
+                _logger.LogError(
+                    ex,
+                    "SQL error in Products.GetAllAsync BusinessAccountId={Id}",
+                    businessAccountId);
+
                 throw;
             }
         }

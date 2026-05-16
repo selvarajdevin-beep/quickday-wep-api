@@ -32,4 +32,10 @@
         public int LowStockCount { get; init; }
         public int CategoryCount { get; init; }
     }
+
+    public class ProductInventorySummary
+    {
+        public int TotalStockUnits { get; set; }
+        public int LowStockCount { get; set; }
+    }
 }

@@ -30,7 +30,7 @@ namespace Shop.Web.API.Services
             bool? activeOnly, string? category, string? search, bool? lowStockOnly,
             int page, int pageSize)
         {
-            var (items, totalCount) = await _repo.GetAllAsync(
+            var (items, totalCount, totalStockUnits, lowStockCount) = await _repo.GetAllAsync(
                 businessAccountId, requestingUserId,
                 activeOnly, category, search, lowStockOnly, page, pageSize);
 
@@ -38,6 +38,8 @@ namespace Shop.Web.API.Services
             {
                 Items = items.Select(MapToDto).ToList(),
                 TotalCount = totalCount,
+                TotalStockUnits = totalStockUnits,
+                LowStockCount = lowStockCount,
                 Page = page,
                 PageSize = pageSize,
             };
